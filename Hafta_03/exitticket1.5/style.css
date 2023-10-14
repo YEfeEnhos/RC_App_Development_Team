@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: "one one two" /*Rakam kulanmayın*/
+                         "three four two" 
+                         "five five five";
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-area: one;
+  }
+  
+  .item2 {
+    grid-area: two;
+  }
+
+  .item3 { /*Deletable*/
+    grid-area: three;
+  }
+  .item4 { /*Deletable*/
+    grid-area: four;
+  }
+  
+  .item5 {
+    grid-area: five;
+  }
